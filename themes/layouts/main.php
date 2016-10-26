@@ -117,7 +117,7 @@ use app\assets\VendorAsset;
         </header>
         <div role="main" class="main">
             <!-- except Landing Page -->
-            <?php if(Yii::$app->controller->id != 'site' && Yii::$app->controller->action->id != 'index' ) { ?>
+            <?php if(Yii::$app->controller->action->id != 'index' ) { ?>
             <section class="page-header">
                 <div class="container">
                     <div class="row">
