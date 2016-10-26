@@ -6,10 +6,10 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
-	'language' => 'id',
+    'language' => 'id',
     'timezone' => 'Asia/Jakarta',
     'components' => [
-		'assetManager' => [
+        'assetManager' => [
             'bundles' => [
                 'yii\web\JqueryAsset' => [
                     'sourcePath' => null,   // do not publish the bundle
@@ -17,25 +17,25 @@ $config = [
                         'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js',
                     ]
                 ],
-				'yii\bootstrap\BootstrapAsset' => [
-					'css' => [
-						'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css',
-					],
-				],
-				'yii\bootstrap\BootstrapPluginAsset' => [
-					'js' => [
-						'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js',
-					],
-				],
-				'yii\bootstrap\BootstrapThemeAsset' => [
-					'css' => [
-						'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css',
-					],
-				],
+                'yii\bootstrap\BootstrapAsset' => [
+                    'css' => [
+                        'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css',
+                    ],
+                ],
+                'yii\bootstrap\BootstrapPluginAsset' => [
+                    'js' => [
+                            'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js',
+                    ],
+                ],
+                'yii\bootstrap\BootstrapThemeAsset' => [
+                    'css' => [
+                            'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css',
+                    ],
+                ],
             ],
         ],
         'request' => [
-			'parsers' => [
+            'parsers' => [
                 'application/json' => 'yii\web\JsonParser',
             ],
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
@@ -91,7 +91,7 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
-		'mailer' => [
+        'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
             'viewPath' => '@app/mail',
             'useFileTransport' => false,
@@ -105,13 +105,22 @@ $config = [
             ],
         ],        
         'urlManager' => [
-			'class' => 'yii\web\UrlManager',
+            'class' => 'yii\web\UrlManager',
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
         ],
-        
+        'view' => [
+            'class' => 'yii\web\View',
+            'theme' => [
+                'basePath' => '@app/themes',
+                'baseUrl' => '@web/themes',
+                'pathMap' => [
+                    '@app/views' => '@app/themes'
+                ],
+            ]
+        ],
     ],
     'params' => $params,
 ];
