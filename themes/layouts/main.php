@@ -38,10 +38,10 @@ use app\assets\VendorAsset;
     <!-- Head Libs -->
     <script src="<?=$this->theme->getUrl('plugins/modernizr/modernizr.js')?>"></script>
 </head>
-<body>
-    <div class="body">
+<body>    
     <?php $this->beginBody() ?>
     <?php Spaceless::begin(); ?>
+    <div class="body">
         <header id="header" data-plugin-options='{"stickyEnabled": true, "stickyEnableOnBoxed": true, "stickyEnableOnMobile": true, "stickyStartAt": 57, "stickySetTop": "-57px", "stickyChangeLogo": true}'>
             <div class="header-body">
                 <div class="header-container container">
@@ -68,7 +68,7 @@ use app\assets\VendorAsset;
                                 <nav class="header-nav-top">
                                     <ul class="nav nav-pills">
                                         <li class="hidden-xs">
-                                            <a href="about-us.php"><i class="fa fa-angle-right"></i> Tentang Kami</a>
+                                            <a href="<?=Yii::$app->getUrlManager()->createUrl(['site/about'])?>"><i class="fa fa-angle-right"></i> Tentang Kami</a>
                                         </li>
                                         <li class="hidden-xs">
                                             <a href="contact-us.php"><i class="fa fa-angle-right"></i> Hubungi Kami</a>
@@ -92,7 +92,7 @@ use app\assets\VendorAsset;
                                     <div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1 collapse">
                                         <nav>
                                             <ul class="nav nav-pills" id="mainNav">
-                                                <li><a href="index.php">Home</a></li>
+                                                <li><a href="<?=Yii::$app->getUrlManager()->createUrl(['site/index'])?>">Home</a></li>
                                                 <li><a href="page-team.php">Team</a></li>
                                                 <li><a href="page-services.php">Services</a></li>
                                                 <li class="dropdown">
@@ -122,7 +122,7 @@ use app\assets\VendorAsset;
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1>About Us</h1>
+                            <h1><?=$this->title?></h1>
                         </div>
                     </div>
                 </div>
