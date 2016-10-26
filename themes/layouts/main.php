@@ -48,7 +48,7 @@ use app\assets\VendorAsset;
                     <div class="header-row">
                         <div class="header-column">
                             <div class="header-logo">
-                                <a href="index.php">
+                                <a href="<?=Yii::$app->getUrlManager()->createUrl(['site/index'])?>">
                                     <img alt="Porto" width="111" height="54" data-sticky-width="82" data-sticky-height="40" data-sticky-top="33" src="<?=$this->theme->getUrl('img/logo.png')?>">
                                 </a>
                             </div>
