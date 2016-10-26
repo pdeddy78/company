@@ -19,17 +19,17 @@ $config = [
                 ],
                 'yii\bootstrap\BootstrapAsset' => [
                     'css' => [
-                        'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css',
+                        'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css',
                     ],
                 ],
                 'yii\bootstrap\BootstrapPluginAsset' => [
                     'js' => [
-                            'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js',
+                            'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js',
                     ],
                 ],
                 'yii\bootstrap\BootstrapThemeAsset' => [
                     'css' => [
-                            'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css',
+                            'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css',
                     ],
                 ],
             ],

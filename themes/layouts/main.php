@@ -24,6 +24,7 @@ use yii\web\View;
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
     <!-- Vendor CSS -->
+    <link rel="stylesheet" href="<?=$this->theme->getUrl('plugins/bootstrap/css/bootstrap.css')?>">
     <link rel="stylesheet" href="<?=$this->theme->getUrl('plugins/font-awesome/css/font-awesome.min.css')?>">
     <link rel="stylesheet" href="<?=$this->theme->getUrl('plugins/simple-line-icons/css/simple-line-icons.css')?>">
     <link rel="stylesheet" href="<?=$this->theme->getUrl('plugins/owl.carousel/assets/owl.carousel.min.css')?>">
@@ -132,6 +133,8 @@ use yii\web\View;
                 </div>
             </section>
             <?php } ?>
+            <?php echo $content; ?>
+        </div>
         <footer id="footer">
             <div class="container">
                 <div class="row">
@@ -208,7 +211,37 @@ use yii\web\View;
                     </div>
                 </div>
             </div>
-    </footer>
+        </footer>
     </div>
+    <!-- Vendor -->
+    <script src="<?=$this->theme->getUrl('plugins/jquery.appear/jquery.appear.js')?>"></script>
+    <script src="<?=$this->theme->getUrl('plugins/jquery.easing/jquery.easing.js')?>"></script>
+    <script src="<?=$this->theme->getUrl('plugins/jquery-cookie/jquery-cookie.js')?>"></script>
+    <script src="<?=$this->theme->getUrl('plugins/bootstrap/js/bootstrap.js')?>"></script>
+    <script src="<?=$this->theme->getUrl('plugins/common/common.js')?>"></script>
+    <script src="<?=$this->theme->getUrl('plugins/jquery.validation/jquery.validation.js')?>"></script>
+    <script src="<?=$this->theme->getUrl('plugins/jquery.stellar/jquery.stellar.js')?>"></script>
+    <script src="<?=$this->theme->getUrl('plugins/jquery.easy-pie-chart/jquery.easy-pie-chart.js')?>"></script>
+    <script src="<?=$this->theme->getUrl('plugins/jquery.gmap/jquery.gmap.js')?>"></script>
+    <script src="<?=$this->theme->getUrl('plugins/jquery.lazyload/jquery.lazyload.js')?>"></script>
+    <script src="<?=$this->theme->getUrl('plugins/isotope/jquery.isotope.js')?>"></script>
+    <script src="<?=$this->theme->getUrl('plugins/owl.carousel/owl.carousel.js')?>"></script>
+    <script src="<?=$this->theme->getUrl('plugins/magnific-popup/jquery.magnific-popup.js')?>"></script>
+    <script src="<?=$this->theme->getUrl('plugins/vide/vide.js')?>"></script>
+    <!-- Theme Base, Components and Settings -->
+    <script src="<?=$this->theme->getUrl('js/theme.js')?>"></script>
+    <!-- Theme Custom -->
+    <script src="<?=$this->theme->getUrl('js/custom.js')?>"></script>
+    <!-- Theme Initialization Files -->
+    <script src="<?=$this->theme->getUrl('js/theme.init.js')?>"></script>
+    <?php $this->registerJs("(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-76850300-1', 'auto');
+  ga('send', 'pageview');", View::POS_END, 'dp-analytic'); ?>  
+<?php Spaceless::end(); ?>
+<?php $this->endBody() ?>
 </body>
 </html>
+<?php $this->endPage(); ?>
