@@ -4,7 +4,6 @@ use yii\widgets\Menu;
 use yii\widgets\Breadcrumbs;
 use yii\widgets\Spaceless;
 use yii\web\View;
-use yii\web\JqueryAsset;
 use app\assets\VendorAsset;
 ?>
 <?php $this->beginPage(); ?>
@@ -25,7 +24,6 @@ use app\assets\VendorAsset;
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">    
-    <?php JqueryAsset::register($this); ?>
     <?php VendorAsset::register($this); ?>
     <!-- Theme CSS -->
     <link rel="stylesheet" href="<?=$this->theme->getUrl('css/theme.css')?>">
