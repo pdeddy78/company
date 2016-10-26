@@ -14,7 +14,7 @@ $config = [
                 'yii\web\JqueryAsset' => [
                     'sourcePath' => null,   // do not publish the bundle
                     'js' => [
-                        'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js',
+                        'https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js',
                     ]
                 ],
                 'yii\bootstrap\BootstrapAsset' => [

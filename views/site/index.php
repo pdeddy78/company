@@ -1,6 +1,35 @@
 <?php
 
 /* @var $this yii\web\View */
+$this->registerCssFile($this->theme->getUrl('plugins/rs-plugin/css/settings.css'), [
+    'depends' => [yii\bootstrap\BootstrapAsset::className()],
+    'media' => 'screen',
+], 'css-screen-theme');
+$this->registerCssFile($this->theme->getUrl('plugins/rs-plugin/css/layers.css'), [
+    'depends' => [yii\bootstrap\BootstrapAsset::className()],
+    'media' => 'screen',
+], 'css-screen-theme');
+$this->registerCssFile($this->theme->getUrl('plugins/rs-plugin/css/navigation.css'), [
+    'depends' => [yii\bootstrap\BootstrapAsset::className()],
+    'media' => 'screen',
+], 'css-screen-theme');
+$this->registerCssFile($this->theme->getUrl('plugins/circle-flip-slideshow/css/component.css'), [
+    'depends' => [yii\bootstrap\BootstrapAsset::className()],
+    'media' => 'screen',
+], 'css-screen-theme');
+
+$this->registerJsFile($this->theme->getUrl('plugins/rs-plugin/js/jquery.themepunch.tools.min.js'), [
+    'depends' => [app\assets\VendorAsset::className()]
+]);
+$this->registerJsFile($this->theme->getUrl('plugins/rs-plugin/js/jquery.themepunch.revolution.min.js'), [
+    'depends' => [app\assets\VendorAsset::className()]
+]);
+$this->registerJsFile($this->theme->getUrl('plugins/circle-flip-slideshow/js/jquery.flipshow.js'), [
+    'depends' => [app\assets\VendorAsset::className()]
+]);
+$this->registerJsFile($this->theme->getUrl('js/views/view.home.js'), [
+    'depends' => [app\assets\VendorAsset::className()]
+]);
 
 $this->title = 'Home';
 ?>
@@ -8,7 +37,7 @@ $this->title = 'Home';
     <div id="revolutionSlider" class="slider rev_slider" data-plugin-revolution-slider data-plugin-options='{"gridwidth": 800, "gridheight": 700}'>
         <ul>
             <li data-transition="fade">
-                <img src="img/slides/landing-page-slide-1.jpg"
+                <img src="<?=$this->theme->getUrl('img/slides/landing-page-slide-1.jpg')?>"
                     alt=""
                     data-bgposition="center center"
                     data-bgfit="cover"
@@ -20,7 +49,7 @@ $this->title = 'Home';
                     data-y="center" data-voffset="-95"
                     data-start="1000"
                     style="z-index: 5"
-                    data-transform_in="x:[-300%];opacity:0;s:500;"><img src="img/slides/slide-title-border.png" alt="">
+                    data-transform_in="x:[-300%];opacity:0;s:500;"><img src="<?=$this->theme->getUrl('img/slides/slide-title-border.png')?>" alt="">
                 </div>
 
                 <div class="tp-caption top-label"
@@ -36,7 +65,7 @@ $this->title = 'Home';
                     data-y="center" data-voffset="-95"
                     data-start="1000"
                     style="z-index: 5"
-                    data-transform_in="x:[300%];opacity:0;s:500;"><img src="img/slides/slide-title-border.png" alt="">
+                    data-transform_in="x:[300%];opacity:0;s:500;"><img src="<?=$this->theme->getUrl('img/slides/slide-title-border.png')?>" alt="">
                 </div>
 
                 <div class="tp-caption main-label"
@@ -73,7 +102,7 @@ $this->title = 'Home';
                 </a>
             </li>
             <li data-transition="fade">
-                <img src="video/landing.jpg"
+                <img src="<?=$this->theme->getUrl('video/landing.jpg')?>"
                     alt=""
                     data-bgposition="center center"
                     data-bgfit="cover"
@@ -81,7 +110,7 @@ $this->title = 'Home';
                     class="rev-slidebg">
 
             <li data-transition="fade">
-                <img src="video/landing1.jpg"
+                <img src="<?=$this->theme->getUrl('video/landing1.jpg')?>"
                     alt=""
                     data-bgposition="center center"
                     data-bgfit="cover"
@@ -93,7 +122,7 @@ $this->title = 'Home';
                     data-y="center" data-voffset="-95"
                     data-start="1000"
                     style="z-index: 5"
-                    data-transform_in="x:[-300%];opacity:0;s:500;"><img src="img/slides/slide-title-border.png" alt="">
+                    data-transform_in="x:[-300%];opacity:0;s:500;"><img src="<?=$this->theme->getUrl('img/slides/slide-title-border.png')?>" alt="">
                 </div>
 
                 <div class="tp-caption top-label"
@@ -109,7 +138,7 @@ $this->title = 'Home';
                     data-y="center" data-voffset="-95"
                     data-start="1000"
                     style="z-index: 5"
-                    data-transform_in="x:[300%];opacity:0;s:500;"><img src="img/slides/slide-title-border.png" alt="">
+                    data-transform_in="x:[300%];opacity:0;s:500;"><img src="<?=$this->theme->getUrl('img/slides/slide-title-border.png')?>" alt="">
                 </div>
 
                 <div class="tp-caption main-label"
@@ -267,12 +296,12 @@ $this->title = 'Home';
                     <div class="owl-carousel owl-theme m-none" data-plugin-options='{"autoHeight": true, "items": 1, "margin": 10, "nav": true, "dots": false, "stagePadding": 0}'>
                         <div>
                             <a href="portfolio-single-project.php">
-                                <img alt="" class="img-responsive" src="img/previews/areas/content-7.png">
+                                <img alt="" class="img-responsive" src="<?=$this->theme->getUrl('img/previews/areas/content-7.png')?>">
                             </a>
                         </div>
                         <div>
                             <a href="portfolio-single-project.php">
-                                <img alt="" class="img-responsive" src="img/previews/areas/content-5.png">
+                                <img alt="" class="img-responsive" src="<?=$this->theme->getUrl('img/previews/areas/content-5.png')?>">
                             </a>
                         </div>
                     </div>
@@ -301,7 +330,7 @@ $this->title = 'Home';
                             </blockquote>
                             <div class="testimonial-arrow-down"></div>
                             <div class="testimonial-author">
-                                <img src="img/clients/client-1.jpg" class="img-responsive img-circle" alt="">
+                                <img src="<?=$this->theme->getUrl('img/clients/client-1.jpg')?>" class="img-responsive img-circle" alt="">
                                 <p><strong>Angga Permana</strong><span>CEO & Founder</span></p>
                             </div>
                         </div>
@@ -313,7 +342,7 @@ $this->title = 'Home';
                             </blockquote>
                             <div class="testimonial-arrow-down"></div>
                             <div class="testimonial-author">
-                                <img src="img/clients/client-2.jpg" class="img-responsive img-circle" alt="">
+                                <img src="<?=$this->theme->getUrl('img/clients/client-2.jpg')?>" class="img-responsive img-circle" alt="">
                                 <p><strong>Jessica Doe</strong><span>Marketing - Okler</span></p>
                             </div>
                         </div>
@@ -325,7 +354,7 @@ $this->title = 'Home';
                             </blockquote>
                             <div class="testimonial-arrow-down"></div>
                             <div class="testimonial-author">
-                                <img src="img/clients/client-3.jpg" class="img-responsive img-circle" alt="">
+                                <img src="<?=$this->theme->getUrl('img/clients/client-3.jpg')?>" class="img-responsive img-circle" alt="">
                                 <p><strong>Deddy Pratama</strong><span>CEO & Founder</span></p>
                             </div>
                         </div>

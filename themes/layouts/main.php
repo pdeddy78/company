@@ -207,13 +207,18 @@ use app\assets\VendorAsset;
                 </div>
             </div>
         </footer>
-    </div>
-    <!-- Theme Base, Components and Settings -->
-    <script src="<?=$this->theme->getUrl('js/theme.js')?>"></script>
+    </div>    
     <!-- Theme Custom -->
     <script src="<?=$this->theme->getUrl('js/custom.js')?>"></script>
-    <!-- Theme Initialization Files -->
-    <script src="<?=$this->theme->getUrl('js/theme.init.js')?>"></script>
+    <!-- Theme Base, Components and Settings -->
+    <?php
+        $this->registerJsFile($this->theme->getUrl('js/theme.js'), [
+            'depends' => [VendorAsset::className()]
+        ]);
+        $this->registerJsFile($this->theme->getUrl('js/theme.init.js'), [
+            'depends' => [VendorAsset::className()]
+        ]);
+    ?>
     <?php $this->registerJs("(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
