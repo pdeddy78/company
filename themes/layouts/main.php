@@ -4,6 +4,8 @@ use yii\widgets\Menu;
 use yii\widgets\Breadcrumbs;
 use yii\widgets\Spaceless;
 use yii\web\View;
+use yii\web\JqueryAsset;
+use app\assets\VendorAsset;
 ?>
 <?php $this->beginPage(); ?>
 <!DOCTYPE html>
@@ -22,14 +24,9 @@ use yii\web\View;
     <?= Html::csrfMetaTags() ?>
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
-    <!-- Vendor CSS -->
-    <link rel="stylesheet" href="<?=$this->theme->getUrl('plugins/bootstrap/css/bootstrap.css')?>">
-    <link rel="stylesheet" href="<?=$this->theme->getUrl('plugins/font-awesome/css/font-awesome.min.css')?>">
-    <link rel="stylesheet" href="<?=$this->theme->getUrl('plugins/simple-line-icons/css/simple-line-icons.css')?>">
-    <link rel="stylesheet" href="<?=$this->theme->getUrl('plugins/owl.carousel/assets/owl.carousel.min.css')?>">
-    <link rel="stylesheet" href="<?=$this->theme->getUrl('plugins/owl.carousel/assets/owl.theme.default.min.css')?>">
-    <link rel="stylesheet" href="<?=$this->theme->getUrl('plugins/magnific-popup/magnific-popup.css')?>">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">    
+    <?php JqueryAsset::register($this); ?>
+    <?php VendorAsset::register($this); ?>
     <!-- Theme CSS -->
     <link rel="stylesheet" href="<?=$this->theme->getUrl('css/theme.css')?>">
     <link rel="stylesheet" href="<?=$this->theme->getUrl('css/theme-elements.css')?>">
@@ -173,8 +170,8 @@ use yii\web\View;
                             <h4>Hubungi Kami</h4>
                             <ul class="contact">
                                 <li><p><i class="fa fa-map-marker"></i> <strong>Address:</strong> Cisereh bubulak, Kec. Curug, Kab. Tangerang</p></li>
-                                <li><p><i class="fa fa-phone"></i> <strong>Phone:</strong> (+62) 896-8888-8913</p></li>
-                                <li><p><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:angga.permana@raharja.info.com">angga.permana@raharja.info.com</a></p></li>
+                                <li><p><i class="fa fa-phone"></i> <strong>Phone:</strong> <?=Yii::$app->params['adminPhone']?></p></li>
+                                <li><p><i class="fa fa-envelope"></i> <strong>Email: </strong> <?=  Html::mailto(Yii::$app->params['adminEmail'], Yii::$app->params['adminEmail'])?></p></li>
                             </ul>
                         </div>
                     </div>
@@ -213,21 +210,6 @@ use yii\web\View;
             </div>
         </footer>
     </div>
-    <!-- Vendor -->
-    <script src="<?=$this->theme->getUrl('plugins/jquery.appear/jquery.appear.js')?>"></script>
-    <script src="<?=$this->theme->getUrl('plugins/jquery.easing/jquery.easing.js')?>"></script>
-    <script src="<?=$this->theme->getUrl('plugins/jquery-cookie/jquery-cookie.js')?>"></script>
-    <script src="<?=$this->theme->getUrl('plugins/bootstrap/js/bootstrap.js')?>"></script>
-    <script src="<?=$this->theme->getUrl('plugins/common/common.js')?>"></script>
-    <script src="<?=$this->theme->getUrl('plugins/jquery.validation/jquery.validation.js')?>"></script>
-    <script src="<?=$this->theme->getUrl('plugins/jquery.stellar/jquery.stellar.js')?>"></script>
-    <script src="<?=$this->theme->getUrl('plugins/jquery.easy-pie-chart/jquery.easy-pie-chart.js')?>"></script>
-    <script src="<?=$this->theme->getUrl('plugins/jquery.gmap/jquery.gmap.js')?>"></script>
-    <script src="<?=$this->theme->getUrl('plugins/jquery.lazyload/jquery.lazyload.js')?>"></script>
-    <script src="<?=$this->theme->getUrl('plugins/isotope/jquery.isotope.js')?>"></script>
-    <script src="<?=$this->theme->getUrl('plugins/owl.carousel/owl.carousel.js')?>"></script>
-    <script src="<?=$this->theme->getUrl('plugins/magnific-popup/jquery.magnific-popup.js')?>"></script>
-    <script src="<?=$this->theme->getUrl('plugins/vide/vide.js')?>"></script>
     <!-- Theme Base, Components and Settings -->
     <script src="<?=$this->theme->getUrl('js/theme.js')?>"></script>
     <!-- Theme Custom -->

@@ -1,3 +1,4 @@
 *
 !.gitignore
 !AppAsset.php
+!VendorAsset.php
