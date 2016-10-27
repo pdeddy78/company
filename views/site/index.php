@@ -243,7 +243,7 @@ $this->title = 'Home';
                 <div class="tab-content">
                     <div class="tab-pane active" id="tabsNavigationSimpleIcons1">
                         <div class="center">
-                            <p>Merancang sebuah website untuk menghasilkan website yang sangat menarik, bagus <a href="#">elegant</a> dan Terlihat Profesional dengan pengalaman kami dalam membuat sebuah website kami menggunakan metode strategy yang cukup handal agar menghasilkan website yang sangat bagus dan berkualitas.</p>
+                            <p>Merancang sebuah website untuk menghasilkan website yang sangat menarik, bagus elegant dan Terlihat Profesional dengan pengalaman kami dalam membuat sebuah website kami menggunakan metode strategy yang cukup handal agar menghasilkan website yang sangat bagus dan berkualitas.<a href="#">elegant</a> dan Terlihat Profesional dengan pengalaman kami dalam membuat sebuah website kami menggunakan metode strategy yang cukup handal agar menghasilkan website yang sangat bagus dan berkualitas.</p>
                         </div>
                     </div>
                     <div class="tab-pane" id="tabsNavigationSimpleIcons2">
