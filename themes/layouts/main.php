@@ -71,7 +71,7 @@ use app\assets\VendorAsset;
                                             <a href="<?=Yii::$app->getUrlManager()->createUrl(['site/about'])?>"><i class="fa fa-angle-right"></i> Tentang Kami</a>
                                         </li>
                                         <li class="hidden-xs">
-                                            <a href="contact-us.php"><i class="fa fa-angle-right"></i> Hubungi Kami</a>
+                                            <a href="<?=Yii::$app->getUrlManager()->createUrl(['site/contact'])?>"><i class="fa fa-angle-right"></i> Hubungi Kami</a>
                                         </li>
                                         <li>
                                             <span class="ws-nowrap"><i class="fa fa-phone"></i> (+62) 896-8888-8913</span>
