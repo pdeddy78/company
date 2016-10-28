@@ -23,7 +23,7 @@ use app\assets\VendorAsset;
     <?= Html::csrfMetaTags() ?>
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">    
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
     <?php VendorAsset::register($this); ?>
     <!-- Theme CSS -->
     <link rel="stylesheet" href="<?=$this->theme->getUrl('css/theme.css')?>">
@@ -38,7 +38,7 @@ use app\assets\VendorAsset;
     <!-- Head Libs -->
     <script src="<?=$this->theme->getUrl('plugins/modernizr/modernizr.js')?>"></script>
 </head>
-<body>    
+<body>
     <?php $this->beginBody() ?>
     <?php Spaceless::begin(); ?>
     <div class="body">
@@ -93,18 +93,18 @@ use app\assets\VendorAsset;
                                         <nav>
                                             <ul class="nav nav-pills" id="mainNav">
                                                 <li><a href="<?=Yii::$app->getUrlManager()->createUrl(['site/index'])?>">Home</a></li>
-                                                <li><a href="page-team.php">Team</a></li>
-                                                <li><a href="page-services.php">Services</a></li>
+                                                <li><a href="<?=Yii::$app->getUrlManager()->createUrl(['site/team'])?>">Team</a></li>
+                                                <li><a href="<?=Yii::$app->getUrlManager()->createUrl(['site/services'])?>">Services</a></li>
                                                 <li class="dropdown">
                                                     <a class="dropdown-toggle" href="#">
                                                             Portfolio
                                                     </a>
                                                     <ul class="dropdown-menu">
-                                                            <li><a href="portfolio-single-project.php">Single Project</a></li>
+                                                            <li><a href="<?=Yii::$app->getUrlManager()->createUrl(['site/project'])?>">Single Project</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="contact-us.php">Hubungi Kami</a></li>
-                                                <li><a href="sitemap.php">Sitemap</a></li>
+                                                <li><a href="<?=Yii::$app->getUrlManager()->createUrl(['site/contact'])?>">Hubungi Kami</a></li>
+                                                <li><a href="<?=Yii::$app->getUrlManager()->createUrl(['site/sitemap'])?>">Sitemap</a></li>
                                             </ul>
                                         </nav>
                                     </div>
@@ -207,7 +207,7 @@ use app\assets\VendorAsset;
                 </div>
             </div>
         </footer>
-    </div>    
+    </div>
     <!-- Theme Custom -->
     <script src="<?=$this->theme->getUrl('js/custom.js')?>"></script>
     <!-- Theme Base, Components and Settings -->
@@ -224,7 +224,7 @@ use app\assets\VendorAsset;
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-76850300-1', 'auto');
-  ga('send', 'pageview');", View::POS_END, 'dp-analytic'); ?>  
+  ga('send', 'pageview');", View::POS_END, 'dp-analytic'); ?>
 <?php Spaceless::end(); ?>
 <?php $this->endBody() ?>
 </body>
