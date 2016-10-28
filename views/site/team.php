@@ -1,23 +1,12 @@
-			<div role="main" class="main">
+<?php
 
-				<section class="page-header">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<ul class="breadcrumb">
-									<li><a href="#">Home</a></li>
-									<li class="active">Pages</li>
-								</ul>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<h1>Team</h1>
-							</div>
-						</div>
-					</div>
-				</section>
+/* @var $this yii\web\View */
 
+use yii\helpers\Html;
+
+$this->title = 'Team';
+$this->params['breadcrumbs'][] = $this->title;
+?>
 				<div class="container">
 
 					<h2>Meet the <strong>Team</strong></h2>
@@ -39,7 +28,7 @@
 								<span class="thumb-info thumb-info-hide-wrapper-bg mb-xlg">
 									<span class="thumb-info-wrapper">
 										<a href="about-me.html">
-											<img src="img/team/team-1.jpg" class="img-responsive" alt="">
+											<img src="themes/img/team/team-1.jpg" class="img-responsive" alt="">
 											<span class="thumb-info-title">
 												<span class="thumb-info-inner">Angga Permana</span>
 												<span class="thumb-info-type">CEO</span>
@@ -208,5 +197,3 @@
 					</div>
 
 				</div>
-
-			</div>

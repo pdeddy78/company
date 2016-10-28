@@ -1,23 +1,12 @@
-		<div role="main" class="main">
+<?php
 
-				<section class="page-header">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<ul class="breadcrumb">
-									<li><a href="#">Home</a></li>
-									<li class="active">Pages</li>
-								</ul>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<h1>Services</h1>
-							</div>
-						</div>
-					</div>
-				</section>
+/* @var $this yii\web\View */
 
+use yii\helpers\Html;
+
+$this->title = 'Services';
+$this->params['breadcrumbs'][] = $this->title;
+?>
 				<div class="container">
 
 					<h2>Our <strong>Services</strong></h2>
@@ -235,5 +224,3 @@
 					</div>
 
 				</div>
-
-			</div>
