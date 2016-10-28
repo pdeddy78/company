@@ -49,9 +49,9 @@ $this->params['breadcrumbs'][] = $this->title;
 								<span class="thumb-info thumb-info-hide-wrapper-bg mb-xlg">
 									<span class="thumb-info-wrapper">
 										<a href="about-me.html">
-											<img src="img/team/team-2.jpg" class="img-responsive" alt="">
+											<img src="<?=$this->theme->getUrl('img/team/team-hore.jpg')?>" class="img-responsive" alt="">
 											<span class="thumb-info-title">
-												<span class="thumb-info-inner">Jessica Doe</span>
+												<span class="thumb-info-inner">Joss Doe</span>
 												<span class="thumb-info-type">Marketing</span>
 											</span>
 										</a>
@@ -70,7 +70,7 @@ $this->params['breadcrumbs'][] = $this->title;
 								<span class="thumb-info thumb-info-hide-wrapper-bg mb-xlg">
 									<span class="thumb-info-wrapper">
 										<a href="about-me.html">
-											<img src="img/team/team-3.jpg" class="img-responsive" alt="">
+											<img src="<?=$this->theme->getUrl('img/team/team-hore.jpg')?>" class="img-responsive" alt="">
 											<span class="thumb-info-title">
 												<span class="thumb-info-inner">Deddy Pratama</span>
 												<span class="thumb-info-type">Developer</span>
@@ -91,7 +91,7 @@ $this->params['breadcrumbs'][] = $this->title;
 								<span class="thumb-info thumb-info-hide-wrapper-bg mb-xlg">
 									<span class="thumb-info-wrapper">
 										<a href="about-me.html">
-											<img src="img/team/team-4.jpg" class="img-responsive" alt="">
+											<img src="<?=$this->theme->getUrl('img/team/team-hore.jpg')?>" class="img-responsive" alt="">
 											<span class="thumb-info-title">
 												<span class="thumb-info-inner">Melinda Doe</span>
 												<span class="thumb-info-type">Design</span>
@@ -112,7 +112,7 @@ $this->params['breadcrumbs'][] = $this->title;
 								<span class="thumb-info thumb-info-hide-wrapper-bg mb-xlg">
 									<span class="thumb-info-wrapper">
 										<a href="about-me.html">
-											<img src="img/team/team-5.jpg" class="img-responsive" alt="">
+											<img src="<?=$this->theme->getUrl('img/team/team-hore.jpg')?>" class="img-responsive" alt="">
 											<span class="thumb-info-title">
 												<span class="thumb-info-inner">Robert Doe</span>
 												<span class="thumb-info-type">Design</span>
@@ -133,7 +133,7 @@ $this->params['breadcrumbs'][] = $this->title;
 								<span class="thumb-info thumb-info-hide-wrapper-bg mb-xlg">
 									<span class="thumb-info-wrapper">
 										<a href="about-me.html">
-											<img src="img/team/team-6.jpg" class="img-responsive" alt="">
+											<img src="<?=$this->theme->getUrl('img/team/team-hore.jpg')?>" class="img-responsive" alt="">
 											<span class="thumb-info-title">
 												<span class="thumb-info-inner">Melissa Doe</span>
 												<span class="thumb-info-type">Marketing</span>
@@ -154,7 +154,7 @@ $this->params['breadcrumbs'][] = $this->title;
 								<span class="thumb-info thumb-info-hide-wrapper-bg mb-xlg">
 									<span class="thumb-info-wrapper">
 										<a href="about-me.html">
-											<img src="img/team/team-7.jpg" class="img-responsive" alt="">
+											<img src="<?=$this->theme->getUrl('img/team/team-hore.jpg')?>" class="img-responsive" alt="">
 											<span class="thumb-info-title">
 												<span class="thumb-info-inner">Will Doe</span>
 												<span class="thumb-info-type">Developer</span>
@@ -175,7 +175,7 @@ $this->params['breadcrumbs'][] = $this->title;
 								<span class="thumb-info thumb-info-hide-wrapper-bg mb-xlg">
 									<span class="thumb-info-wrapper">
 										<a href="about-me.html">
-											<img src="img/team/team-8.jpg" class="img-responsive" alt="">
+											<img src="<?=$this->theme->getUrl('img/team/team-hore.jpg')?>" class="img-responsive" alt="">
 											<span class="thumb-info-title">
 												<span class="thumb-info-inner">Jerry Doe</span>
 												<span class="thumb-info-type">Developer</span>
