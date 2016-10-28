@@ -100,6 +100,7 @@ class SiteController extends Controller
      *
      * @return string
      */
+     /*
     public function actionContact()
     {
         $model = new ContactForm();
@@ -112,6 +113,7 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+    */
 
     /**
      * Displays about page.
@@ -121,5 +123,23 @@ class SiteController extends Controller
     public function actionAbout()
     {
         return $this->render('about');
+    }
+    /**
+     * Displays about page.
+     *
+     * @return string
+     */
+    public function actionContact()
+    {
+        return $this->render('contact');
+    }
+    /**
+     * Displays about page.
+     *
+     * @return string
+     */
+    public function actionProject()
+    {
+        return $this->render('project');
     }
 }
