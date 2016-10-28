@@ -138,6 +138,51 @@ class SiteController extends Controller
      *
      * @return string
      */
+    public function actionError()
+    {
+        return $this->render('error');
+    }
+    /**
+     * Displays about page.
+     *
+     * @return string
+     */
+    public function actionFaq()
+    {
+        return $this->render('faq');
+    }
+    /**
+     * Displays about page.
+     *
+     * @return string
+     */
+    public function actionServices()
+    {
+        return $this->render('services');
+    }
+    /**
+     * Displays about page.
+     *
+     * @return string
+     */
+    public function actionSitemap()
+    {
+        return $this->render('sitemap');
+    }
+    /**
+     * Displays about page.
+     *
+     * @return string
+     */
+    public function actionTeam()
+    {
+        return $this->render('team');
+    }
+    /**
+     * Displays about page.
+     *
+     * @return string
+     */
     public function actionProject()
     {
         return $this->render('project');
