@@ -94,7 +94,7 @@ use app\assets\VendorAsset;
                                             <ul class="nav nav-pills" id="mainNav">
                                                 <li><a href="<?=Yii::$app->getUrlManager()->createUrl(['site/index'])?>">Home</a></li>
                                                 <li><a href="<?=Yii::$app->getUrlManager()->createUrl(['site/team'])?>">Team</a></li>
-                                                <li><a href="page-services.php">Services</a></li>
+                                                <li><a href="<?=Yii::$app->getUrlManager()->createUrl(['site/services'])?>">Services</a></li>
                                                 <li class="dropdown">
                                                     <a class="dropdown-toggle" href="#">
                                                             Portfolio
@@ -103,8 +103,8 @@ use app\assets\VendorAsset;
                                                             <li><a href="<?=Yii::$app->getUrlManager()->createUrl(['site/project'])?>">Single Project</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="contact-us.php">Hubungi Kami</a></li>
-                                                <li><a href="sitemap.php">Sitemap</a></li>
+                                                <li><a href="<?=Yii::$app->getUrlManager()->createUrl(['site/contact'])?>">Hubungi Kami</a></li>
+                                                <li><a href="<?=Yii::$app->getUrlManager()->createUrl(['site/sitemap'])?>">Sitemap</a></li>
                                             </ul>
                                         </nav>
                                     </div>
