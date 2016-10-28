@@ -206,9 +206,9 @@ use app\assets\VendorAsset;
                         <div class="col-md-4">
                             <nav id="sub-menu">
                                 <ul>
-                                    <li><a href="page-faq.php">FAQ's</a></li>
-                                    <li><a href="sitemap.php">Sitemap</a></li>
-                                    <li><a href="contact-us.php">Contact</a></li>
+                                    <li><a href="<?=Yii::$app->getUrlManager()->createUrl(['site/faq'])?>">FAQ's</a></li>
+                                    <li><a href="<?=Yii::$app->getUrlManager()->createUrl(['site/sitemap'])?>">Sitemap</a></li>
+                                    <li><a href="<?=Yii::$app->getUrlManager()->createUrl(['site/contact'])?>">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>
