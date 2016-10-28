@@ -1,25 +1,12 @@
-<?php  ?>
+<?php
 
-			<div role="main" class="main">
+/* @var $this yii\web\View */
 
-				<section class="page-header">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<ul class="breadcrumb">
-									<li><a href="index.php">Home</a></li>
-									<li class="active">Pages</li>
-								</ul>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<h1>Sitemap</h1>
-							</div>
-						</div>
-					</div>
-				</section>
+use yii\helpers\Html;
 
+$this->title = 'Sitemap';
+$this->params['breadcrumbs'][] = $this->title;
+?>
 				<div class="container">
 
 					<div class="row">
@@ -53,5 +40,3 @@
 					</div>
 
 				</div>
-
-			</div>
