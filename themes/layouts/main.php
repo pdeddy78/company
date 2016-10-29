@@ -177,8 +177,8 @@ use app\assets\VendorAsset;
                             <h4>Hubungi Kami</h4>
                             <ul class="contact">
                                 <li><p><i class="fa fa-map-marker"></i> <strong>Address:</strong> Cisereh bubulak, Kec. Curug, Kab. Tangerang</p></li>
-                                <li><p><i class="fa fa-phone"></i> <strong>Phone:</strong> <?=Yii::$app->params['adminPhone']?></p></li>
-                                <li><p><i class="fa fa-envelope"></i> <strong>Email: </strong> <?=  Html::mailto(Yii::$app->params['adminEmail'], Yii::$app->params['adminEmail'])?></p></li>
+                                <li><p><i class="fa fa-phone"></i> <strong>Phone: (+62) 896-8888-8913</strong> <?=Yii::$app->params['adminPhone']?></p></li>
+                                <li><p><i class="fa fa-envelope"></i> <strong>Email: angga.permana@raharja.info</strong> <?=  Html::mailto(Yii::$app->params['adminEmail'], Yii::$app->params['adminEmail'])?></p></li>
                             </ul>
                         </div>
                     </div>

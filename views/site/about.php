@@ -252,7 +252,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <span class="thumb-info thumb-info-hide-wrapper-bg">
                                 <span class="thumb-info-wrapper">
                                         <a href="about-me.html">
-                                                <img src="<?=$this->theme->getUrl('img/team/team-3.jpg')?>" class="img-responsive" alt="">
+                                                <img src="<?=$this->theme->getUrl('img/team/team-hore.jpg')?>" class="img-responsive" alt="">
                                                 <span class="thumb-info-title">
                                                         <span class="thumb-info-inner">Deddy Pratama</span>
                                                         <span class="thumb-info-type">Developer</span>

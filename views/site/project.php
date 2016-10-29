@@ -36,17 +36,17 @@ $this->params['breadcrumbs'][] = $this->title;
 							<div class="owl-carousel owl-theme" data-plugin-options='{"items": 1, "margin": 10}'>
 								<div>
 									<span class="img-thumbnail">
-										<img alt="" class="img-responsive" src="img/projects/project.jpg">
+										<img alt="" class="img-responsive" src="<?=$this->theme->getUrl('img/projects/project-1.jpg')?>">
 									</span>
 								</div>
 								<div>
 									<span class="img-thumbnail">
-										<img alt="" class="img-responsive" src="img/projects/project-1.jpg">
+										<img alt="" class="img-responsive" src="<?=$this->theme->getUrl('img/projects/project-2.jpg')?>">
 									</span>
 								</div>
 								<div>
 									<span class="img-thumbnail">
-										<img alt="" class="img-responsive" src="img/projects/project-2.jpg">
+										<img alt="" class="img-responsive" src="<?=$this->theme->getUrl('img/projects/project-3.jpg')?>.jpg">
 									</span>
 								</div>
 							</div>
@@ -113,7 +113,7 @@ $this->params['breadcrumbs'][] = $this->title;
 											<a href="portfolio-single-project.html">
 												<span class="thumb-info">
 													<span class="thumb-info-wrapper">
-														<img src="img/projects/project.jpg" class="img-responsive" alt="">
+														<img src="<?=$this->theme->getUrl('img/projects/project.jpg')?>" class="img-responsive" alt="">
 														<span class="thumb-info-title">
 															<span class="thumb-info-inner">Random Chars</span>
 															<span class="thumb-info-type">Website</span>
@@ -131,7 +131,7 @@ $this->params['breadcrumbs'][] = $this->title;
 											<a href="portfolio-single-project.html">
 												<span class="thumb-info">
 													<span class="thumb-info-wrapper">
-														<img src="img/projects/project-1.jpg" class="img-responsive" alt="">
+														<img src="<?=$this->theme->getUrl('img/projects/project-1.jpg')?>" class="img-responsive" alt="">
 														<span class="thumb-info-title">
 															<span class="thumb-info-inner">Full House</span>
 															<span class="thumb-info-type">Website</span>
@@ -149,7 +149,7 @@ $this->params['breadcrumbs'][] = $this->title;
 											<a href="portfolio-single-project.html">
 												<span class="thumb-info">
 													<span class="thumb-info-wrapper">
-														<img src="img/projects/project-2.jpg" class="img-responsive" alt="">
+														<img src="<?=$this->theme->getUrl('img/projects/project-2.jpg')?>" class="img-responsive" alt="">
 														<span class="thumb-info-title">
 															<span class="thumb-info-inner">The Fly</span>
 															<span class="thumb-info-type">Logo</span>
@@ -167,7 +167,7 @@ $this->params['breadcrumbs'][] = $this->title;
 											<a href="portfolio-single-project.html">
 												<span class="thumb-info">
 													<span class="thumb-info-wrapper">
-														<img src="img/projects/project-3.jpg" class="img-responsive" alt="">
+														<img src="<?=$this->theme->getUrl('img/projects/project-3.jpg')?>" class="img-responsive" alt="">
 														<span class="thumb-info-title">
 															<span class="thumb-info-inner">Run Away</span>
 															<span class="thumb-info-type">Brand</span>
